@@ -38,7 +38,7 @@ public class Ecuaciones extends JFrame {
 	public Ecuaciones() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		setSize(450, 300);
+		setSize(395, 300);
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -61,7 +61,7 @@ public class Ecuaciones extends JFrame {
 		btnNewButton.setBounds(10, 233, 84, 20);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Primer grado");
+		JButton btnNewButton_1 = new JButton("Ir");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				primer M = new primer();
@@ -69,10 +69,10 @@ public class Ecuaciones extends JFrame {
 				Ecuaciones.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(79, 122, 132, 20);
+		btnNewButton_1.setBounds(205, 88, 75, 20);
 		contentPane.add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("Segundo grado");
+		JButton btnNewButton_2 = new JButton("Ir");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				segundo K = new segundo();
@@ -82,8 +82,13 @@ public class Ecuaciones extends JFrame {
 				
 			}
 		});
-		btnNewButton_2.setBounds(222, 122, 115, 20);
+		btnNewButton_2.setBounds(205, 149, 75, 20);
 		contentPane.add(btnNewButton_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("Primer grado");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(86, 87, 109, 19);
+		contentPane.add(lblNewLabel_1);
 
 	}
 }

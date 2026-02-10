@@ -37,7 +37,7 @@ public class ventana1 extends JFrame {
 		//mantiene a la ventana del mismo tamaño
 		this.setResizable(false);
 		//los 2 primeros parametros son posicion en pantalla
-		this.setSize(450, 283);
+		this.setSize(477, 283);
 		//coloca la pantalla en el centro
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
@@ -45,8 +45,7 @@ public class ventana1 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		//Objeto boton que se crea en design
-		JButton btnNewButton = new JButton("Sistema de \necuaciones ");
-		btnNewButton.setHorizontalAlignment(SwingConstants.LEFT);
+		JButton btnNewButton = new JButton("Ir");
 		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -59,15 +58,15 @@ public class ventana1 extends JFrame {
 				ventana1.this.dispose();
 				}
 		});
-		btnNewButton.setBounds(10, 100, 173, 50);
+		btnNewButton.setBounds(42, 127, 93, 29);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("Calculadora");
+		JLabel lblNewLabel = new JLabel("Calculadora Algebraica ");
 		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 18));
-		lblNewLabel.setBounds(151, 11, 116, 35);
+		lblNewLabel.setBounds(127, 11, 204, 35);
 		contentPane.add(lblNewLabel);
 		
-		JButton btnFigurasGeometricas = new JButton("Figuras geometricas");
+		JButton btnFigurasGeometricas = new JButton("Ir");
 		btnFigurasGeometricas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				figuras fi = new figuras ();
@@ -75,15 +74,15 @@ public class ventana1 extends JFrame {
 				ventana1.this.dispose();
 			}
 		});
-		btnFigurasGeometricas.setBounds(10, 45, 143, 37);
+		btnFigurasGeometricas.setBounds(42, 71, 93, 29);
 		contentPane.add(btnFigurasGeometricas);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(ventana1.class.getResource("/imagen/istockphoto-470493341-612x612 (1).jpg")));
-		lblNewLabel_1.setBounds(193, 46, 231, 154);
+		lblNewLabel_1.setBounds(220, 61, 231, 154);
 		contentPane.add(lblNewLabel_1);
 		
-		JButton btnNewButton_1 = new JButton("Ecuaciones");
+		JButton btnNewButton_1 = new JButton("Ir");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Ecuaciones ec = new Ecuaciones();
@@ -91,8 +90,22 @@ public class ventana1 extends JFrame {
 				ventana1.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(10, 165, 143, 35);
+		btnNewButton_1.setBounds(42, 186, 93, 29);
 		contentPane.add(btnNewButton_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Ecuaciones 1er y 2do grado");
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2.setBounds(10, 167, 172, 19);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Sistemas de ecuaciones");
+		lblNewLabel_3.setBounds(32, 111, 143, 14);
+		contentPane.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Figuras geometricas");
+		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_4.setBounds(23, 57, 133, 14);
+		contentPane.add(lblNewLabel_4);
 
 	}
 }
