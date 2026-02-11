@@ -65,7 +65,7 @@ public class figuras extends JFrame {
 		JButton btnNewButton = new JButton("Menu");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ventana1 v1 = new ventana1();
+				menu v1 = new menu();
 			    v1.setVisible(true);
 			    figuras.this.dispose();
 			}

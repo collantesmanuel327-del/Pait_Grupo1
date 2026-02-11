@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.SwingConstants;
 
-public class ventana1 extends JFrame {
+public class menu extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -23,7 +23,7 @@ public class ventana1 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ventana1 frame = new ventana1();
+					menu frame = new menu();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class ventana1 extends JFrame {
 		});
 	}
 
-	public ventana1() {
+	public menu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//mantiene a la ventana del mismo tamaño
 		this.setResizable(false);
@@ -55,7 +55,7 @@ public class ventana1 extends JFrame {
 				//metodo que abre una ventana en especifico 
 				v2.setVisible(true);
 				//el metodo hace que esta ventana se cierre al abrir la anterior
-				ventana1.this.dispose();
+				menu.this.dispose();
 				}
 		});
 		btnNewButton.setBounds(42, 127, 93, 29);
@@ -71,14 +71,14 @@ public class ventana1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				figuras fi = new figuras ();
 				fi.setVisible(true);
-				ventana1.this.dispose();
+				menu.this.dispose();
 			}
 		});
 		btnFigurasGeometricas.setBounds(42, 71, 93, 29);
 		contentPane.add(btnFigurasGeometricas);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(ventana1.class.getResource("/imagen/istockphoto-470493341-612x612 (1).jpg")));
+		lblNewLabel_1.setIcon(new ImageIcon(menu.class.getResource("/imagen/istockphoto-470493341-612x612 (1).jpg")));
 		lblNewLabel_1.setBounds(220, 61, 231, 154);
 		contentPane.add(lblNewLabel_1);
 		
@@ -87,7 +87,7 @@ public class ventana1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Ecuaciones ec = new Ecuaciones();
 				ec.setVisible(true);
-				ventana1.this.dispose();
+				menu.this.dispose();
 			}
 		});
 		btnNewButton_1.setBounds(42, 186, 93, 29);
