@@ -153,11 +153,6 @@ public class primer extends JFrame {
 		});
 		btnNewButton_2.setBounds(227, 129, 89, 23);
 		contentPane.add(btnNewButton_2);
-		
-		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon(primer.class.getResource("/imagen/snaplytics_converted_gif.gif")));
-		lblNewLabel_4.setBounds(0, 0, 430, 268);
-		contentPane.add(lblNewLabel_4);
 
 	}
 }
