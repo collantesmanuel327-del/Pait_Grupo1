@@ -143,7 +143,7 @@ public class figuras extends JFrame {
 					rest.setText("solo valores positivos ");
 				}
 				} catch (NumberFormatException e1) {
-					JOptionPane.showMessageDialog(null, "Solo valores numericos ");
+					JOptionPane.showMessageDialog(null, "Solo valores numericos");
 					
 				}
 				
